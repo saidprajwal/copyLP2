@@ -1,0 +1,9 @@
+git --version
+git init
+git add file.txt
+git status
+git config --global user.email""
+git config --global user.name""
+git commit -m "commited"
+git pull origin
+git status
