@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<title>My Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+<div data-role="header" data-theme="b">
+<h2>Flipkart</h2>
+</div>
+<div data-role="navbar" data-grid="d">
+ <ul>
+ <li><a href="#" class="ui-btn-active">Home</a></li>
+ <li><a href="#">Register</a></li>
+ <li><a href="Login.html">Login</a></li>
+ <li><a href="#">About Us</a></li>
+ </ul>
+</div><!-- /navbar -->
+<div role="main" class="ui-content">
+<center><h1>Welcome to Flipkart shopping!!!</h1></center>
+<center><img src="https://i1.wp.com/besttoppers.com/wp-content/uploads/2016/05/flipkart.jpg?resize=150%2C150" alt="Italian Trulli"></center>
+</div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>
+
+//login
+<!doctype html>
+<html>
+<head>
+<title>My Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<br>
+<br>
+<label for="text-basic">Username:</label>
+<input type="text" name="text-basic" id="text-basic" value="">
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" value="" autocomplete="off">
+<button class="ui-btn ui-shadow">Submit</button>
+</body>
+</html>
