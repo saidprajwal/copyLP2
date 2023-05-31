@@ -1,3 +1,62 @@
+Water jug
+max1=int(input("Enter maximum amount of water in jug1: "))
+max2=int(input("Enter maximum amount of water in jug2: "))
+fill=int(input("Enter fill: "))
+def pour(jug1,jug2):
+    print("%d  %d "%(jug1,jug2))
+    if jug2==fill:
+        return
+    elif jug1!=0 and jug2==0:
+        pour(0,jug1)
+    elif jug2==max2:
+        pour(0,jug1)
+    elif jug1==fill:
+        pour(jug1,0)
+    elif jug1<max1:
+        pour(max1,jug2)
+    elif jug1<(max2-jug2):
+        pour(0,(jug1+jug2))
+    else:
+        pour(jug1-(max2-jug2),(max2-jug2)+jug2)
+        
+pour(0,0)
+
+
+
+NLTK
+import nltk
+#nltk.download('punkt')
+from nltk.corpus import stopwords
+#nltk.download('stopwords')
+from nltk.tokenize import word_tokenize
+from nltk.probability import FreqDist
+from nltk.tag import pos_tag
+#nltk.download('averaged_perceptron_tagger')
+
+text = "This is a sample sentense. It contain multiple words and some of these repeat. We will analyze this text using NLP text "
+
+words = word_tokenize(text)
+print("tokenized words:")
+print (words)
+
+words = [word.lower() for word in words]
+
+fdist = FreqDist(words)
+print("Word Frequency:")
+print(fdist)
+for word, freq in fdist.items():
+    print(f"{word}: {freq}")
+    
+stop_words = set(stopwords.words('english'))
+filtered_words = [word for word in words if word.casefold() not in stop_words]
+print("Filtered Words")
+print(filtered_words)
+
+pos_tags = pos_tag(words)
+print("POS Tags:")
+print(pos_tags)
+
+TSP
 import sys
 def nearest_neighbour(curr,unvisited,matrix):
     nearest=1000
